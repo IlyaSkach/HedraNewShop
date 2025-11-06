@@ -1,6 +1,5 @@
 import React from "react";
 import { categories } from "../data/products";
-import { PLACEHOLDER_IMAGE_SMALL } from "../data/constants";
 import { useLanguage } from "../context/LanguageContext";
 import "../styles/Categories.css";
 
