@@ -26,10 +26,10 @@ yarn-error.log*
 *.sublime-project
 *.sublime-workspace
 
-# Images (add manually)
-/public/assets/images/*.jpg
-/public/assets/images/*.png
-/public/assets/images/*.mp4
-/public/assets/images/**/*.jpg
-/public/assets/images/**/*.png
+# Images - теперь включены в Git
+# /public/assets/images/*.jpg
+# /public/assets/images/*.png
+# /public/assets/images/*.mp4
+# /public/assets/images/**/*.jpg
+# /public/assets/images/**/*.png
 
