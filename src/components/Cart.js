@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { CONTACTS, DELIVERY_COST } from "../data/constants";
 import { PLACEHOLDER_IMAGE_SMALL } from "../data/constants";
 import { useLanguage } from "../context/LanguageContext";
@@ -13,15 +13,20 @@ const Cart = ({
   onOrder,
 }) => {
   const { t } = useLanguage();
+  const [deliveryArea, setDeliveryArea] = useState("");
 
   const handleImageError = (e) => {
     e.target.src = PLACEHOLDER_IMAGE_SMALL;
   };
 
   const handleOrder = () => {
-    if (cart.length === 0) return;
+    if (cart.length === 0 || !deliveryArea) return;
 
-    const phoneNumber = CONTACTS.whatsapp;
+    const phoneNumber =
+      deliveryArea === "alAhyaa"
+        ? CONTACTS.whatsappAlAhyaa
+        : CONTACTS.whatsappHurghada;
+
     let message = `${t("newOrder").toUpperCase()}\n\n`;
 
     cart.forEach((item, index) => {
@@ -35,6 +40,9 @@ const Cart = ({
     const subtotal = getTotalPrice();
     const total = subtotal + DELIVERY_COST;
 
+    message += `${t("deliveryArea")}: ${
+      deliveryArea === "alAhyaa" ? t("alAhyaa") : t("hurghada")
+    }\n`;
     message += `${t("subtotal")}: ${subtotal} ${t("currency")}\n`;
     message += `${t("delivery")}: ${DELIVERY_COST} ${t("currency")}\n\n`;
     message += `${t("orderTotal").toUpperCase()}: ${total} ${t("currency")}`;
@@ -44,10 +52,10 @@ const Cart = ({
     )}`;
     window.open(whatsappUrl, "_blank");
 
-    // Очистить корзину через секунду
     setTimeout(() => {
       onOrder();
       onClose();
+      setDeliveryArea("");
     }, 1000);
   };
 
@@ -92,6 +100,47 @@ const Cart = ({
           )}
         </div>
         <div className="cart-footer">
+          <div className="delivery-area">
+            <p>{t("deliveryArea")}</p>
+            <div className="delivery-options">
+              <label
+                className={`delivery-option ${
+                  deliveryArea === "hurghada" ? "selected" : ""
+                }`}
+              >
+                <input
+                  type="checkbox"
+                  checked={deliveryArea === "hurghada"}
+                  onChange={() =>
+                    setDeliveryArea((prev) =>
+                      prev === "hurghada" ? "" : "hurghada"
+                    )
+                  }
+                />
+                <span>{t("hurghada")}</span>
+              </label>
+              <label
+                className={`delivery-option ${
+                  deliveryArea === "alAhyaa" ? "selected" : ""
+                }`}
+              >
+                <input
+                  type="checkbox"
+                  checked={deliveryArea === "alAhyaa"}
+                  onChange={() =>
+                    setDeliveryArea((prev) =>
+                      prev === "alAhyaa" ? "" : "alAhyaa"
+                    )
+                  }
+                />
+                <span>{t("alAhyaa")}</span>
+              </label>
+            </div>
+            {!deliveryArea && cart.length > 0 && (
+              <span className="delivery-hint">{t("selectArea")}</span>
+            )}
+          </div>
+
           <div className="cart-summary">
             <div className="cart-subtotal">
               <span>{t("subtotal")}:</span>
@@ -115,7 +164,7 @@ const Cart = ({
           <button
             className="order-btn"
             onClick={handleOrder}
-            disabled={cart.length === 0}
+            disabled={cart.length === 0 || !deliveryArea}
           >
             <i className="fab fa-whatsapp"></i> {t("orderWhatsApp")}
           </button>

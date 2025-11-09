@@ -35,6 +35,10 @@ export const translations = {
     subtotal: "Subtotal",
     delivery: "Delivery",
     total: "Total",
+    deliveryArea: "Delivery area",
+    selectArea: "Select delivery area",
+    hurghada: "Hurghada",
+    alAhyaa: "Al Ahyaa",
     orderWhatsApp: "Order via WhatsApp",
     remove: "Remove",
 
@@ -81,6 +85,10 @@ export const translations = {
     subtotal: "Сумма товаров",
     delivery: "Доставка",
     total: "Итого",
+    deliveryArea: "Зона доставки",
+    selectArea: "Выберите зону доставки",
+    hurghada: "Хургада",
+    alAhyaa: "Эль Ахьяа",
     orderWhatsApp: "Заказать через WhatsApp",
     remove: "Удалить",
 
