@@ -19,8 +19,9 @@ export const translations = {
     rtd: "RTD",
     comingSoon: "Coming Soon",
 
-    // Beer Subcategories
+    // Subcategories
     beerSubcategoriesTitle: "Beer - Choose Brand",
+    wineSubcategoriesTitle: "Wine - Choose Type",
 
     // Products
     productsTitle: "Products",
@@ -64,8 +65,9 @@ export const translations = {
     rtd: "RTD",
     comingSoon: "Скоро",
 
-    // Beer Subcategories
+    // Subcategories
     beerSubcategoriesTitle: "Пиво - Выберите бренд",
+    wineSubcategoriesTitle: "Вино - Выберите тип",
 
     // Products
     productsTitle: "Товары",

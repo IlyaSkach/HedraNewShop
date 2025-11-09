@@ -2,19 +2,23 @@ import React, { useState, useRef } from "react";
 import Header from "./components/Header";
 import VideoBanner from "./components/VideoBanner";
 import Categories from "./components/Categories";
-import BeerSubcategories from "./components/BeerSubcategories";
+import Subcategories from "./components/Subcategories";
 import Products from "./components/Products";
 import Cart from "./components/Cart";
 import { useCart } from "./hooks/useCart";
+import { subcategoriesByCategory } from "./data/products";
+import { useLanguage } from "./context/LanguageContext";
 import "./App.css";
 
 function App() {
-  const [showBeerSection, setShowBeerSection] = useState(false);
-  const [selectedBrand, setSelectedBrand] = useState(null);
+  const { t } = useLanguage();
+  const [activeCategory, setActiveCategory] = useState(null);
+  const [activeSubcategory, setActiveSubcategory] = useState(null);
+  const [activeSubcategoryName, setActiveSubcategoryName] = useState("");
   const [showCart, setShowCart] = useState(false);
   const [cartAnimation, setCartAnimation] = useState(false);
 
-  const beerSectionRef = useRef(null);
+  const subcategorySectionRef = useRef(null);
   const productsSectionRef = useRef(null);
 
   const {
@@ -27,16 +31,19 @@ function App() {
   } = useCart();
 
   const handleCategorySelect = (categoryId) => {
-    if (categoryId === "beer") {
-      setShowBeerSection(true);
-      setTimeout(() => {
-        beerSectionRef.current?.scrollIntoView({ behavior: "smooth" });
-      }, 100);
-    }
+    setActiveCategory(categoryId);
+    setActiveSubcategory(null);
+    setActiveSubcategoryName("");
+
+    setTimeout(() => {
+      subcategorySectionRef.current?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
   };
 
-  const handleBrandSelect = (brandId) => {
-    setSelectedBrand(brandId);
+  const handleSubcategorySelect = (subcategory) => {
+    setActiveSubcategory(subcategory.id);
+    setActiveSubcategoryName(subcategory.name);
+
     setTimeout(() => {
       productsSectionRef.current?.scrollIntoView({ behavior: "smooth" });
     }, 100);
@@ -44,7 +51,6 @@ function App() {
 
   const handleAddToCart = (product, quantity) => {
     addToCart(product, quantity);
-    // Анимация корзины
     setCartAnimation(true);
     setTimeout(() => setCartAnimation(false), 300);
   };
@@ -52,6 +58,16 @@ function App() {
   const handleOrder = () => {
     clearCart();
   };
+
+  const currentSubcategories =
+    (activeCategory && subcategoriesByCategory[activeCategory]) || [];
+
+  const subcategoryTitle =
+    activeCategory === "beer"
+      ? t("beerSubcategoriesTitle")
+      : activeCategory === "wine"
+      ? t("wineSubcategoriesTitle")
+      : "";
 
   return (
     <div className="App">
@@ -65,17 +81,20 @@ function App() {
 
       <Categories onCategorySelect={handleCategorySelect} />
 
-      <div ref={beerSectionRef}>
-        <BeerSubcategories
-          show={showBeerSection}
-          onBrandSelect={handleBrandSelect}
+      <div ref={subcategorySectionRef}>
+        <Subcategories
+          show={!!activeCategory}
+          title={subcategoryTitle}
+          subcategories={currentSubcategories}
+          onSelect={handleSubcategorySelect}
         />
       </div>
 
       <div ref={productsSectionRef}>
         <Products
-          brand={selectedBrand}
-          show={selectedBrand !== null}
+          subcategory={activeSubcategory}
+          title={activeSubcategoryName}
+          show={activeSubcategory !== null}
           onAddToCart={handleAddToCart}
         />
       </div>

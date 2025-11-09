@@ -4,14 +4,14 @@ import { useLanguage } from "../context/LanguageContext";
 import ProductCard from "./ProductCard";
 import "../styles/Products.css";
 
-const Products = ({ brand, show, onAddToCart }) => {
+const Products = ({ subcategory, title, show, onAddToCart }) => {
   const { t } = useLanguage();
   const [quantities, setQuantities] = useState({});
 
-  if (!show || !brand) return null;
+  if (!show || !subcategory) return null;
 
-  const products = productsData[brand] || [];
-  const brandName = brand.charAt(0).toUpperCase() + brand.slice(1);
+  const products = productsData[subcategory] || [];
+  const displayTitle = title || subcategory;
 
   const handleQuantityChange = (productId, action) => {
     setQuantities((prev) => {
@@ -37,7 +37,7 @@ const Products = ({ brand, show, onAddToCart }) => {
     <section className="products-section">
       <div className="container">
         <h2>
-          {brandName} - {t("productsTitle")}
+          {displayTitle} - {t("productsTitle")}
         </h2>
         <div className="products-grid">
           {products.map((product) => (
