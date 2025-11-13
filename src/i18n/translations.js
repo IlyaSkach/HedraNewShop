@@ -22,6 +22,7 @@ export const translations = {
     // Subcategories
     beerSubcategoriesTitle: "Beer - Choose Brand",
     wineSubcategoriesTitle: "Wine - Choose Type",
+    spiritsSubcategoriesTitle: "Spirits - Choose Type",
 
     // Products
     productsTitle: "Products",
@@ -72,6 +73,7 @@ export const translations = {
     // Subcategories
     beerSubcategoriesTitle: "Пиво - Выберите бренд",
     wineSubcategoriesTitle: "Вино - Выберите тип",
+    spiritsSubcategoriesTitle: "Крепкие напитки - Выберите тип",
 
     // Products
     productsTitle: "Товары",
