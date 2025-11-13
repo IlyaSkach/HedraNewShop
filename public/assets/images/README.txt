@@ -66,22 +66,33 @@
 │
 └── 📁 spirits/
     ├── 📁 subcategories/          (Картинки подкатегорий спиртного)
-    │   ├── whiskey.png
-    │   ├── rum.png
-    │   ├── vodka.png
-    │   ├── gin.png
-    │   ├── brandy.png
-    │   ├── arak.png
-    │   └── tequila.png
+    │   ├── whisky_1.png
+    │   ├── rum-1.png
+    │   ├── vodka-1.png
+    │   ├── gin-1.png
+    │   ├── brandy-1.png
+    │   ├── arak-1.png
+    │   └── tequila-1.png
     │
     └── 📁 products/               (Изображения спиртных напитков)
-        ├── whiskey-1.png … whiskey-5.png
+        ├── whisky_1.png … whisky_5.png
         ├── rum-1.png … rum-2.png
         ├── vodka-1.png … vodka-6.png
         ├── gin-1.png … gin-3.png
         ├── brandy-1.png … brandy-2.png
         ├── arak-1.png
         └── tequila-1.png
+
+├── 📁 rtd/
+│   ├── 📁 subcategories/          (Картинки подкатегорий RTD)
+│   │   ├── id-1.png
+│   │   ├── blue40-freeze-1.png
+│   │   └── butlers-1.png
+│   │
+│   └── 📁 products/               (Изображения RTD напитков)
+│       ├── id-1.png … id-8.png
+│       ├── blue40-freeze-1.png … blue40-freeze-3.png
+│       └── butlers-1.png … butlers-4.png
 
 ═══════════════════════════════════════════════════════════════
   ИТОГО ФАЙЛОВ
@@ -96,8 +107,10 @@
 ✓ 47 товаров вина
 ✓ 7 изображений подкатегорий спиртного
 ✓ 20 товаров спиртного
+✓ 3 изображения подкатегорий RTD
+✓ 15 товаров RTD
 
-ВСЕГО: 113 файлов (при полной комплектации)
+ВСЕГО: 130 файлов (при полной комплектации)
 
 ═══════════════════════════════════════════════════════════════
   РЕКОМЕНДАЦИИ

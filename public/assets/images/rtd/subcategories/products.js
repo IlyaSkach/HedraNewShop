@@ -62,27 +62,27 @@ export const wineSubcategories = [
   {
     id: "red-wine",
     name: "Red Wine",
-    image: "/assets/images/wine/subcategories/redwine_7.png",
+    image: "/assets/images/wine/subcategories/red-wine.png",
   },
   {
     id: "rose-wine",
     name: "Rosé Wine",
-    image: "/assets/images/wine/subcategories/rosewine_3.png",
+    image: "/assets/images/wine/subcategories/rose-wine.png",
   },
   {
     id: "white-wine",
     name: "White Wine",
-    image: "/assets/images/wine/subcategories/whitewine_8.png",
+    image: "/assets/images/wine/subcategories/white-wine.png",
   },
   {
     id: "sweet-wine",
     name: "Sweet Wine",
-    image: "/assets/images/wine/subcategories/sweetwine_2.png",
+    image: "/assets/images/wine/subcategories/sweet-wine.png",
   },
   {
     id: "sparkling-wine",
     name: "Sparkling Wine",
-    image: "/assets/images/wine/subcategories/sparkingwine_5.png",
+    image: "/assets/images/wine/subcategories/sparkling-wine.png",
   },
 ];
 

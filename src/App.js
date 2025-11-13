@@ -69,6 +69,8 @@ function App() {
       ? t("wineSubcategoriesTitle")
       : activeCategory === "spirits"
       ? t("spiritsSubcategoriesTitle")
+      : activeCategory === "rtd"
+      ? t("rtdSubcategoriesTitle")
       : "";
 
   return (
