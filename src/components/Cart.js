@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import { CONTACTS, DELIVERY_COST } from "../data/constants";
 import { PLACEHOLDER_IMAGE_SMALL } from "../data/constants";
 import { useLanguage } from "../context/LanguageContext";
@@ -14,9 +14,53 @@ const Cart = ({
 }) => {
   const { t } = useLanguage();
   const [deliveryArea, setDeliveryArea] = useState("");
+  const [locationStatus, setLocationStatus] = useState("idle");
+  const [locationCoords, setLocationCoords] = useState(null);
 
   const handleImageError = (e) => {
     e.target.src = PLACEHOLDER_IMAGE_SMALL;
+  };
+
+  const resetLocation = useCallback(() => {
+    setLocationStatus("idle");
+    setLocationCoords(null);
+  }, []);
+
+  const handleUseLocation = () => {
+    if (cart.length === 0) return;
+
+    if (!navigator.geolocation) {
+      setLocationStatus("unsupported");
+      return;
+    }
+
+    setLocationStatus("locating");
+
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const { latitude, longitude, accuracy } = position.coords;
+        setLocationCoords({ latitude, longitude, accuracy });
+        setLocationStatus("success");
+      },
+      (error) => {
+        setLocationCoords(null);
+
+        if (error.code === error.PERMISSION_DENIED) {
+          setLocationStatus("denied");
+        } else if (error.code === error.POSITION_UNAVAILABLE) {
+          setLocationStatus("unavailable");
+        } else if (error.code === error.TIMEOUT) {
+          setLocationStatus("timeout");
+        } else {
+          setLocationStatus("error");
+        }
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: 10000,
+        maximumAge: 0,
+      }
+    );
   };
 
   const handleOrder = () => {
@@ -44,8 +88,20 @@ const Cart = ({
       deliveryArea === "alAhyaa" ? t("alAhyaa") : t("hurghada")
     }\n`;
     message += `${t("subtotal")}: ${subtotal} ${t("currency")}\n`;
-    message += `${t("delivery")}: ${DELIVERY_COST} ${t("currency")}\n\n`;
-    message += `${t("orderTotal").toUpperCase()}: ${total} ${t("currency")}`;
+    message += `${t("delivery")}: ${DELIVERY_COST} ${t("currency")}\n`;
+
+    if (locationCoords) {
+      const latitude = Number(locationCoords.latitude).toFixed(6);
+      const longitude = Number(locationCoords.longitude).toFixed(6);
+      const mapsLink = `https://maps.google.com/?q=${latitude},${longitude}`;
+
+      message += `\n${t("locationCoordinates")}: ${latitude}, ${longitude}`;
+      message += `\n${t("locationMapLink")}: ${mapsLink}\n`;
+    } else {
+      message += "\n";
+    }
+
+    message += `\n${t("orderTotal").toUpperCase()}: ${total} ${t("currency")}`;
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
@@ -56,15 +112,44 @@ const Cart = ({
       onOrder();
       onClose();
       setDeliveryArea("");
+      resetLocation();
     }, 1000);
   };
 
+  const getLocationFeedback = () => {
+    switch (locationStatus) {
+      case "locating":
+        return { type: "info", message: t("locationProcessing") };
+      case "success":
+        return { type: "success", message: t("locationSuccess") };
+      case "denied":
+        return { type: "error", message: t("locationPermissionDenied") };
+      case "unavailable":
+        return { type: "error", message: t("locationUnavailable") };
+      case "timeout":
+        return { type: "error", message: t("locationTimeout") };
+      case "unsupported":
+        return { type: "error", message: t("locationUnsupported") };
+      case "error":
+        return { type: "error", message: t("locationError") };
+      default:
+        return null;
+    }
+  };
+
+  const locationFeedback = getLocationFeedback();
+
+  const handleClose = () => {
+    onClose();
+    resetLocation();
+  };
+
   return (
-    <div className={`cart-modal ${show ? "active" : ""}`} onClick={onClose}>
+    <div className={`cart-modal ${show ? "active" : ""}`} onClick={handleClose}>
       <div className="cart-modal-content" onClick={(e) => e.stopPropagation()}>
         <div className="cart-header">
           <h2>{t("yourCart")}</h2>
-          <button className="close-cart" onClick={onClose}>
+          <button className="close-cart" onClick={handleClose}>
             <i className="fas fa-times"></i>
           </button>
         </div>
@@ -161,6 +246,21 @@ const Cart = ({
               </span>
             </div>
           </div>
+          <button
+            className="location-btn"
+            onClick={handleUseLocation}
+            disabled={cart.length === 0 || locationStatus === "locating"}
+          >
+            <i className="fas fa-location-arrow"></i>
+            {locationStatus === "locating"
+              ? t("locationProcessing")
+              : t("useMyLocation")}
+          </button>
+          {locationFeedback && (
+            <p className={`location-message ${locationFeedback.type}`}>
+              {locationFeedback.message}
+            </p>
+          )}
           <button
             className="order-btn"
             onClick={handleOrder}

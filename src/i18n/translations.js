@@ -43,6 +43,16 @@ export const translations = {
     alAhyaa: "Al Ahyaa",
     orderWhatsApp: "Order via WhatsApp",
     remove: "Remove",
+    useMyLocation: "Use my location",
+    locationProcessing: "Determining location...",
+    locationSuccess: "Location saved for the order",
+    locationError: "Unable to determine location",
+    locationPermissionDenied: "Location access denied",
+    locationUnavailable: "Location information unavailable",
+    locationTimeout: "Location request timed out",
+    locationUnsupported: "Geolocation is not supported in this browser",
+    locationCoordinates: "Location",
+    locationMapLink: "Map link",
 
     // WhatsApp Message
     newOrder: "New order from HedraNewShop",
@@ -95,6 +105,16 @@ export const translations = {
     alAhyaa: "Эль Ахьяа",
     orderWhatsApp: "Заказать через WhatsApp",
     remove: "Удалить",
+    useMyLocation: "Моё местоположение",
+    locationProcessing: "Определяем местоположение...",
+    locationSuccess: "Местоположение добавлено к заказу",
+    locationError: "Не удалось определить местоположение",
+    locationPermissionDenied: "Доступ к геоданным запрещён",
+    locationUnavailable: "Местоположение недоступно",
+    locationTimeout: "Время ожидания местоположения истекло",
+    locationUnsupported: "Геолокация не поддерживается в этом браузере",
+    locationCoordinates: "Координаты",
+    locationMapLink: "Ссылка на карту",
 
     // WhatsApp Message
     newOrder: "Новый заказ из HedraNewShop",
