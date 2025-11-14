@@ -23,6 +23,12 @@ export const categories = [
     image: "/assets/images/categories/rtd.png",
     active: true,
   },
+  {
+    id: "extra",
+    name: "Extras",
+    image: "/assets/images/categories/extra.png",
+    active: false,
+  },
 ];
 
 export const beerBrands = [

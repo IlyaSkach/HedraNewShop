@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from "react";
-import { CONTACTS, DELIVERY_COST } from "../data/constants";
+import { CONTACTS } from "../data/constants";
 import { PLACEHOLDER_IMAGE_SMALL } from "../data/constants";
 import { useLanguage } from "../context/LanguageContext";
 import "../styles/Cart.css";
@@ -82,13 +82,13 @@ const Cart = ({
     });
 
     const subtotal = getTotalPrice();
-    const total = subtotal + DELIVERY_COST;
+    const total = subtotal;
 
     message += `${t("deliveryArea")}: ${
       deliveryArea === "alAhyaa" ? t("alAhyaa") : t("hurghada")
     }\n`;
     message += `${t("subtotal")}: ${subtotal} ${t("currency")}\n`;
-    message += `${t("delivery")}: ${DELIVERY_COST} ${t("currency")}\n`;
+    message += `${t("deliveryDependsOnLocation")}\n`;
 
     if (locationCoords) {
       const latitude = Number(locationCoords.latitude).toFixed(6);
@@ -233,19 +233,14 @@ const Cart = ({
                 {getTotalPrice()} {t("currency")}
               </span>
             </div>
-            <div className="cart-delivery">
-              <span>{t("delivery")}:</span>
-              <span>
-                {DELIVERY_COST} {t("currency")}
-              </span>
-            </div>
             <div className="cart-total">
               <span>{t("total")}:</span>
               <span>
-                {getTotalPrice() + DELIVERY_COST} {t("currency")}
+                {getTotalPrice()} {t("currency")}
               </span>
             </div>
           </div>
+          <p className="delivery-note">{t("deliveryDependsOnLocation")}</p>
           <button
             className="location-btn"
             onClick={handleUseLocation}

@@ -17,6 +17,7 @@ export const translations = {
     wine: "Wine",
     spirits: "Spirits",
     rtd: "RTD",
+    extra: "Extras",
     comingSoon: "Coming Soon",
 
     // Subcategories
@@ -43,6 +44,7 @@ export const translations = {
     alAhyaa: "Al Ahyaa",
     orderWhatsApp: "Order via WhatsApp",
     remove: "Remove",
+    deliveryDependsOnLocation: "Delivery cost depends on your location",
     useMyLocation: "Use my location",
     locationProcessing: "Determining location...",
     locationSuccess: "Location saved for the order",
@@ -53,6 +55,9 @@ export const translations = {
     locationUnsupported: "Geolocation is not supported in this browser",
     locationCoordinates: "Location",
     locationMapLink: "Map link",
+    customRequestsTitle: "Catalog update in progress",
+    customRequestsMessage:
+      "Until the new section arrives, just mention in your order which soft drinks, ice, snacks or other treats you need — we will arrange everything for you.",
 
     // WhatsApp Message
     newOrder: "New order from HedraNewShop",
@@ -79,6 +84,7 @@ export const translations = {
     wine: "Вино",
     spirits: "Крепкие напитки",
     rtd: "RTD",
+    extra: "Дополнительно",
     comingSoon: "Скоро",
 
     // Subcategories
@@ -105,6 +111,7 @@ export const translations = {
     alAhyaa: "Эль Ахьяа",
     orderWhatsApp: "Заказать через WhatsApp",
     remove: "Удалить",
+    deliveryDependsOnLocation: "Стоимость доставки зависит от вашего местоположения",
     useMyLocation: "Моё местоположение",
     locationProcessing: "Определяем местоположение...",
     locationSuccess: "Местоположение добавлено к заказу",
@@ -115,6 +122,9 @@ export const translations = {
     locationUnsupported: "Геолокация не поддерживается в этом браузере",
     locationCoordinates: "Координаты",
     locationMapLink: "Ссылка на карту",
+    customRequestsTitle: "Каталог скоро обновится",
+    customRequestsMessage:
+      "Пока новый раздел готовится, напишите в заказе, какие безалкогольные напитки, лёд, закуски или снеки нужны — мы всё подберём для вас.",
 
     // WhatsApp Message
     newOrder: "Новый заказ из HedraNewShop",

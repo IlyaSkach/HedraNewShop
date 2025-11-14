@@ -217,6 +217,13 @@
   color: var(--primary-color);
 }
 
+.delivery-note {
+  margin: 8px 0 16px;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
 .location-btn {
   width: 100%;
   background: var(--primary-color);
