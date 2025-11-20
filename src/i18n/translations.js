@@ -58,6 +58,9 @@ export const translations = {
     customRequestsTitle: "Catalog update in progress",
     customRequestsMessage:
       "Until the new section arrives, just mention in your order which soft drinks, ice, snacks or other treats you need — we will arrange everything for you.",
+    installAppButton: "Install app",
+    installAppMessage:
+      "For a smoother experience, install HedraNewShop as an app on your device.",
 
     // WhatsApp Message
     newOrder: "New order from HedraNewShop",
@@ -125,6 +128,9 @@ export const translations = {
     customRequestsTitle: "Каталог скоро обновится",
     customRequestsMessage:
       "Пока новый раздел готовится, напишите в заказе, какие безалкогольные напитки, лёд, закуски или снеки нужны — мы всё подберём для вас.",
+    installAppButton: "Установить приложение",
+    installAppMessage:
+      "Для более комфортной работы установите приложение HedraNewShop.",
 
     // WhatsApp Message
     newOrder: "Новый заказ из HedraNewShop",

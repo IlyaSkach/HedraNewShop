@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import Header from "./components/Header";
 import VideoBanner from "./components/VideoBanner";
 import InfoBanner from "./components/InfoBanner";
+import InstallPrompt from "./components/InstallPrompt";
 import Categories from "./components/Categories";
 import Subcategories from "./components/Subcategories";
 import Products from "./components/Products";
@@ -114,6 +115,8 @@ function App() {
         getTotalPrice={getTotalPrice}
         onOrder={handleOrder}
       />
+
+      <InstallPrompt />
     </div>
   );
 }
