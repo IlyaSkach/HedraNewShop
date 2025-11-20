@@ -27,7 +27,7 @@
 }
 
 .install-banner__button {
-  background: #25d366;
+  background: #ffba08;
   border: none;
   color: #ffffff;
   font-size: 15px;
@@ -59,4 +59,3 @@
     width: 100%;
   }
 }
-
