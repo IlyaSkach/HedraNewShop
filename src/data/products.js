@@ -369,14 +369,14 @@ export const productsData = {
       price: 380,
       image: "/assets/images/wine/products/redwine_4.png",
     },
-    {
-      id: "red-wine-5",
-      name: "Ayam Red Wine 750ml",
-      brand: "red-wine",
-      alcohol: "12.5% Alcohol",
-      price: 245,
-      image: "/assets/images/wine/products/redwine_5.png",
-    },
+    // {
+    //   id: "red-wine-5",
+    //   name: "Ayam Red Wine 750ml",
+    //   brand: "red-wine",
+    //   alcohol: "12.5% Alcohol",
+    //   price: 245,
+    //   image: "/assets/images/wine/products/redwine_5.png",
+    // },
     {
       id: "red-wine-6",
       name: "Baila Red Wine 750ml Discovery Vineyards Range",
@@ -451,14 +451,14 @@ export const productsData = {
     },
   ],
   "rose-wine": [
-    {
-      id: "rose-wine-1",
-      name: "Ayam Rose Wine 750ml",
-      brand: "rose-wine",
-      alcohol: "12.5% Alcohol",
-      price: 230,
-      image: "/assets/images/wine/products/rosewine_1.png",
-    },
+    // {
+    //   id: "rose-wine-1",
+    //   name: "Ayam Rose Wine 750ml",
+    //   brand: "rose-wine",
+    //   alcohol: "12.5% Alcohol",
+    //   price: 230,
+    //   image: "/assets/images/wine/products/rosewine_1.png",
+    // },
     {
       id: "rose-wine-2",
       name: "Baila Rose Wine 750ml Discovery Vineyards Range",
@@ -541,14 +541,14 @@ export const productsData = {
       price: 380,
       image: "/assets/images/wine/products/whitewine_4.png",
     },
-    {
-      id: "white-wine-5",
-      name: "Ayam White Wine 750ml",
-      brand: "white-wine",
-      alcohol: "12.5% Alcohol",
-      price: 230,
-      image: "/assets/images/wine/products/whitewine_5.png",
-    },
+    // {
+    //   id: "white-wine-5",
+    //   name: "Ayam White Wine 750ml",
+    //   brand: "white-wine",
+    //   alcohol: "12.5% Alcohol",
+    //   price: 230,
+    //   image: "/assets/images/wine/products/whitewine_5.png",
+    // },
     {
       id: "white-wine-6",
       name: "Baila White Wine 750ml Discovery Vineyards Range",

@@ -61,6 +61,10 @@ export const translations = {
     installAppButton: "Install app",
     installAppMessage:
       "For a smoother experience, install HedraNewShop as an app on your device.",
+    installIOSInstructions:
+      "Tap the Share button at the bottom, then select 'Add to Home Screen'.",
+    installMacOSInstructions:
+      "Click the Share button in the address bar, then select 'Add to Dock'.",
 
     // WhatsApp Message
     newOrder: "New order from HedraNewShop",
@@ -131,6 +135,10 @@ export const translations = {
     installAppButton: "Установить приложение",
     installAppMessage:
       "Для более комфортной работы установите приложение HedraNewShop.",
+    installIOSInstructions:
+      "Нажмите кнопку «Поделиться» внизу, затем выберите «На экран «Домой»».",
+    installMacOSInstructions:
+      "Нажмите кнопку «Поделиться» в адресной строке, затем выберите «Добавить в Dock».",
 
     // WhatsApp Message
     newOrder: "Новый заказ из HedraNewShop",
