@@ -128,6 +128,16 @@ export const spiritsSubcategories = [
     name: "Tequila",
     image: "/assets/images/spirits/subcategories/tequila-1.png",
   },
+  {
+    id: "ouzo",
+    name: "Ouzo",
+    image: "/assets/images/spirits/products/ouzo.png",
+  },
+  {
+    id: "liqueur",
+    name: "Liqueur",
+    image: "/assets/images/spirits/products/liqueur.png",
+  },
 ];
 
 export const rtdSubcategories = [
@@ -145,6 +155,11 @@ export const rtdSubcategories = [
     id: "butlers",
     name: "Butler's",
     image: "/assets/images/rtd/subcategories/butlers-1.png",
+  },
+  {
+    id: "others",
+    name: "Others",
+    image: "/assets/images/rtd/products/other1.png",
   },
 ];
 
@@ -369,14 +384,14 @@ export const productsData = {
       price: 380,
       image: "/assets/images/wine/products/redwine_4.png",
     },
-    // {
-    //   id: "red-wine-5",
-    //   name: "Ayam Red Wine 750ml",
-    //   brand: "red-wine",
-    //   alcohol: "12.5% Alcohol",
-    //   price: 245,
-    //   image: "/assets/images/wine/products/redwine_5.png",
-    // },
+    {
+      id: "red-wine-5",
+      name: "365 Red 750ml",
+      brand: "red-wine",
+      alcohol: "13.0% Alcohol",
+      price: 260,
+      image: "/assets/images/wine/products/365redwine.png",
+    },
     {
       id: "red-wine-6",
       name: "Baila Red Wine 750ml Discovery Vineyards Range",
@@ -451,14 +466,14 @@ export const productsData = {
     },
   ],
   "rose-wine": [
-    // {
-    //   id: "rose-wine-1",
-    //   name: "Ayam Rose Wine 750ml",
-    //   brand: "rose-wine",
-    //   alcohol: "12.5% Alcohol",
-    //   price: 230,
-    //   image: "/assets/images/wine/products/rosewine_1.png",
-    // },
+    {
+      id: "rose-wine-1",
+      name: "365 Rose 750ml",
+      brand: "rose-wine",
+      alcohol: "12.5% Alcohol",
+      price: 260,
+      image: "/assets/images/wine/products/365rosewine.png",
+    },
     {
       id: "rose-wine-2",
       name: "Baila Rose Wine 750ml Discovery Vineyards Range",
@@ -541,14 +556,14 @@ export const productsData = {
       price: 380,
       image: "/assets/images/wine/products/whitewine_4.png",
     },
-    // {
-    //   id: "white-wine-5",
-    //   name: "Ayam White Wine 750ml",
-    //   brand: "white-wine",
-    //   alcohol: "12.5% Alcohol",
-    //   price: 230,
-    //   image: "/assets/images/wine/products/whitewine_5.png",
-    // },
+    {
+      id: "white-wine-5",
+      name: "365 White 750ml",
+      brand: "white-wine",
+      alcohol: "11.5% Alcohol",
+      price: 260,
+      image: "/assets/images/wine/products/365whitewine.png",
+    },
     {
       id: "white-wine-6",
       name: "Baila White Wine 750ml Discovery Vineyards Range",
@@ -646,6 +661,14 @@ export const productsData = {
       alcohol: "16% Alcohol",
       price: 230,
       image: "/assets/images/wine/products/sweetwine_3.png",
+    },
+    {
+      id: "sweet-wine-4",
+      name: "Grand Marquis Sweet Red 750ml",
+      brand: "sweet-wine",
+      alcohol: "16% Alcohol",
+      price: 340,
+      image: "/assets/images/wine/products/gmsweetwine.png",
     },
   ],
   "sparkling-wine": [
@@ -763,6 +786,30 @@ export const productsData = {
       price: 130,
       image: "/assets/images/spirits/products/whisky_5.png",
     },
+    {
+      id: "whiskey-6",
+      name: "Yanni Whisky 1L",
+      brand: "whiskey",
+      alcohol: "35% Alcohol",
+      price: 185,
+      image: "/assets/images/spirits/products/whiskinew1.png",
+    },
+    {
+      id: "whiskey-7",
+      name: "Mosaic Whisky The Bartender Edition 750ml",
+      brand: "whiskey",
+      alcohol: "40% Alcohol",
+      price: 220,
+      image: "/assets/images/spirits/products/whiskinew2.png",
+    },
+    {
+      id: "whiskey-8",
+      name: "Black Rhino Whisky 750ml",
+      brand: "whiskey",
+      alcohol: "40% Alcohol",
+      price: 495,
+      image: "/assets/images/spirits/products/whiskinew3.png",
+    },
   ],
   rum: [
     {
@@ -780,6 +827,30 @@ export const productsData = {
       alcohol: "35% Alcohol",
       price: 140,
       image: "/assets/images/spirits/products/rum-2.png",
+    },
+    {
+      id: "rum-3",
+      name: "Yanni Rum 1L",
+      brand: "rum",
+      alcohol: "30% Alcohol",
+      price: 185,
+      image: "/assets/images/spirits/products/rumnew1.png",
+    },
+    {
+      id: "rum-4",
+      name: "Mosaic Rum Gold The Bartender Edition 750ml",
+      brand: "rum",
+      alcohol: "35% Alcohol",
+      price: 220,
+      image: "/assets/images/spirits/products/rumnew2.png",
+    },
+    {
+      id: "rum-5",
+      name: "Mosaic Rum White The Bartender Edition 750ml",
+      brand: "rum",
+      alcohol: "35% Alcohol",
+      price: 220,
+      image: "/assets/images/spirits/products/rumnew3.png",
     },
   ],
   vodka: [
@@ -831,6 +902,30 @@ export const productsData = {
       price: 140,
       image: "/assets/images/spirits/products/vodka-6.png",
     },
+    {
+      id: "vodka-7",
+      name: "Yanni Vodka 1L",
+      brand: "vodka",
+      alcohol: "35% Alcohol",
+      price: 185,
+      image: "/assets/images/spirits/products/vodkanew1.png",
+    },
+    {
+      id: "vodka-8",
+      name: "Mosaic Vodka The Bartender Edition 750ml",
+      brand: "vodka",
+      alcohol: "38% Alcohol",
+      price: 220,
+      image: "/assets/images/spirits/products/vodkanew2.png",
+    },
+    {
+      id: "vodka-9",
+      name: "Swan Premium Vodka 750ml",
+      brand: "vodka",
+      alcohol: "40% Alcohol",
+      price: 400,
+      image: "/assets/images/spirits/products/vodkanew3.png",
+    },
   ],
   gin: [
     {
@@ -857,6 +952,30 @@ export const productsData = {
       price: 140,
       image: "/assets/images/spirits/products/gin-3.png",
     },
+    {
+      id: "gin-4",
+      name: "Yanni Gin 1L",
+      brand: "gin",
+      alcohol: "35% Alcohol",
+      price: 185,
+      image: "/assets/images/spirits/products/ginnew1.png",
+    },
+    {
+      id: "gin-5",
+      name: "Mosaic Gin The Bartender Edition 750ml",
+      brand: "gin",
+      alcohol: "35% Alcohol",
+      price: 220,
+      image: "/assets/images/spirits/products/ginnew2.png",
+    },
+    {
+      id: "gin-6",
+      name: "Harry’s Premium Gin 750ml",
+      brand: "gin",
+      alcohol: "40% Alcohol",
+      price: 500,
+      image: "/assets/images/spirits/products/ginnew3.png",
+    },
   ],
   brandy: [
     {
@@ -875,6 +994,22 @@ export const productsData = {
       price: 140,
       image: "/assets/images/spirits/products/brandy-2.png",
     },
+    {
+      id: "brandy-3",
+      name: "Mosaic Cognac Style 750ml",
+      brand: "brandy",
+      alcohol: "40% Alcohol",
+      price: 375,
+      image: "/assets/images/spirits/products/brandynew1.png",
+    },
+    {
+      id: "brandy-4",
+      name: "Yanni Brandy 1L",
+      brand: "brandy",
+      alcohol: "30% Alcohol",
+      price: 185,
+      image: "/assets/images/spirits/products/brandynew2.png",
+    },
   ],
   arak: [
     {
@@ -885,6 +1020,14 @@ export const productsData = {
       price: 240,
       image: "/assets/images/spirits/products/arak-1.png",
     },
+    {
+      id: "arak-2",
+      name: "Arak Kesrouan 500ml",
+      brand: "arak",
+      alcohol: "50% Alcohol",
+      price: 300,
+      image: "/assets/images/spirits/products/arak2.png",
+    },
   ],
   tequila: [
     {
@@ -894,6 +1037,42 @@ export const productsData = {
       alcohol: "38% Alcohol",
       price: 240,
       image: "/assets/images/spirits/products/tequila-1.png",
+    },
+    {
+      id: "tequila-2",
+      name: "BOLANACHI Sombrero 750ml",
+      brand: "tequila",
+      alcohol: "35% Alcohol",
+      price: 140,
+      image: "/assets/images/spirits/products/tequla-2.png",
+    },
+    {
+      id: "tequila-3",
+      name: "Yanni Tequila 1L",
+      brand: "tequila",
+      alcohol: "35% Alcohol",
+      price: 185,
+      image: "/assets/images/spirits/products/teqilanew2.png",
+    },
+  ],
+  ouzo: [
+    {
+      id: "ouzo-1",
+      name: "Yanni Ouzo 1L",
+      brand: "ouzo",
+      alcohol: "40% Alcohol",
+      price: 216,
+      image: "/assets/images/spirits/products/ouzo.png",
+    },
+  ],
+  liqueur: [
+    {
+      id: "liqueur-1",
+      name: "Skinos Mastiha Spirit",
+      brand: "liqueur",
+      alcohol: "30% Alcohol",
+      price: 1750,
+      image: "/assets/images/spirits/products/liqueur.png",
     },
   ],
   id: [
@@ -957,7 +1136,7 @@ export const productsData = {
       id: "id-8",
       name: "ID Double Edge Peach",
       brand: "id",
-      alcohol: "10% Alcohol", 
+      alcohol: "10% Alcohol",
       price: 60,
       image: "/assets/images/rtd/products/id-8.png",
     },
@@ -1020,6 +1199,32 @@ export const productsData = {
       alcohol: "10% Alcohol",
       price: 60,
       image: "/assets/images/rtd/products/butlers-4.png",
+    },
+  ],
+  others: [
+    {
+      id: "others-1",
+      name: "XO Sangria White 10% 275ml",
+      brand: "others",
+      alcohol: "10% Alcohol",
+      price: 75,
+      image: "/assets/images/rtd/products/other1.png",
+    },
+    {
+      id: "others-2",
+      name: "21+ Pina Colada 10% 275ml",
+      brand: "others",
+      alcohol: "10% Alcohol",
+      price: 60,
+      image: "/assets/images/rtd/products/other2.png",
+    },
+    {
+      id: "others-3",
+      name: "XO Sangria Red 10% 275ml",
+      brand: "others",
+      alcohol: "10% Alcohol",
+      price: 75,
+      image: "/assets/images/rtd/products/other3.png",
     },
   ],
 };
