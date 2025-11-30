@@ -1,10 +1,10 @@
 // Контактные данные
 export const CONTACTS = {
   phone: "+201222209569",
-  whatsapp: "79263810509", // общий номер (по умолчанию Hurghada)
+  whatsapp: "201222209569", // общий номер (по умолчанию Hurghada)
   whatsappHurghada: "201222209569",
   whatsappAlAhyaa: "201211688666",
-  telegram: "79263810509",
+  telegram: "201222209569",
 };
 
 // Стоимость доставки
