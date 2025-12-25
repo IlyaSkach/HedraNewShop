@@ -238,6 +238,14 @@ export const productsData = {
       price: 65,
       image: "/assets/images/beer/products/StellaIce.png",
     },
+    {
+      id: "stella-6",
+      name: "Stella Returnable Bottle 500ml",
+      brand: "stella",
+      alcohol: "8.0% Alcohol",
+      price: 55,
+      image: "/assets/images/beer/products/stelaRet.png",
+    },
   ],
   sakara: [
     {
