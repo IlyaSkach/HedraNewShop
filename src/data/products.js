@@ -243,7 +243,7 @@ export const productsData = {
       name: "Stella Returnable Bottle 500ml",
       brand: "stella",
       alcohol: "8.0% Alcohol",
-      price: 55,
+      price: 60,
       image: "/assets/images/beer/products/stelaRet.png",
     },
   ],
@@ -1089,7 +1089,7 @@ export const productsData = {
       name: "ID XXXX Watermelon 275ml",
       brand: "id",
       alcohol: "20% Alcohol",
-      price: 70,
+      price: 75,
       image: "/assets/images/rtd/products/id-1.png",
     },
     {
@@ -1097,7 +1097,7 @@ export const productsData = {
       name: "ID XXXX Pineapple & Coconut 275ml",
       brand: "id",
       alcohol: "20% Alcohol",
-      price: 70,
+      price: 75,
       image: "/assets/images/rtd/products/id-2.png",
     },
     {
@@ -1105,7 +1105,7 @@ export const productsData = {
       name: "ID XXXX Mango 275ml",
       brand: "id",
       alcohol: "20% Alcohol",
-      price: 70,
+      price: 75,
       image: "/assets/images/rtd/products/id-3.png",
     },
     {
@@ -1181,7 +1181,7 @@ export const productsData = {
       name: "Butler's XXX Gin Lemon Mint 275ml",
       brand: "butlers",
       alcohol: "20% Alcohol",
-      price: 70,
+      price: 75,
       image: "/assets/images/rtd/products/butlers-1.png",
     },
     {
