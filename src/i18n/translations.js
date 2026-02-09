@@ -55,9 +55,9 @@ export const translations = {
     locationUnsupported: "Geolocation is not supported in this browser",
     locationCoordinates: "Location",
     locationMapLink: "Map link",
-    customRequestsTitle: "Catalog update in progress",
+    customRequestsTitle: "Dear valued customer",
     customRequestsMessage:
-      "Until the new section arrives, just mention in your order which soft drinks, ice, snacks or other treats you need — we will arrange everything for you.",
+      "Kindly note that the shops will be completely closed from the first day of Ramadan, February 19th, until February 22nd.\n\nIn order to satisfy our customers, We will be resumed the operations starting from February 23rd via delivery services from 3:00PM to 9:00PM. Till the end of Ramadan.\n\nBest Wishes,\nHedra Al Ahyaa & Al Kawther",
     installAppButton: "Install app",
     installAppMessage:
       "For a smoother experience, install HedraNewShop as an app on your device.",
@@ -129,9 +129,9 @@ export const translations = {
     locationUnsupported: "Геолокация не поддерживается в этом браузере",
     locationCoordinates: "Координаты",
     locationMapLink: "Ссылка на карту",
-    customRequestsTitle: "Каталог скоро обновится",
+    customRequestsTitle: "Уважаемый клиент",
     customRequestsMessage:
-      "Пока новый раздел готовится, напишите в заказе, какие безалкогольные напитки, лёд, закуски или снеки нужны — мы всё подберём для вас.",
+      "Обратите внимание, что магазины будут полностью закрыты с первого дня Рамадана, 19 февраля, до 22 февраля.\n\nДля удовлетворения наших клиентов мы возобновим работу начиная с 23 февраля через службу доставки с 15:00 до 21:00. До конца Рамадана.\n\nС наилучшими пожеланиями,\nHedra Al Ahyaa & Al Kawther",
     installAppButton: "Установить приложение",
     installAppMessage:
       "Для более комфортной работы установите приложение HedraNewShop.",
