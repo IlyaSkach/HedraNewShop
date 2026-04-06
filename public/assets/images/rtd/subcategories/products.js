@@ -224,7 +224,7 @@ export const productsData = {
       name: "Sakara El-King 15 Can 500ml",
       brand: "sakara",
       alcohol: "15.0% Alcohol",
-      price: 80,
+      price: 85,
       image: "/assets/images/beer/products/SakaraCan500ml.png",
     },
     {
@@ -232,7 +232,7 @@ export const productsData = {
       name: "Sakara El-King 15 Bottle 500ml",
       brand: "sakara",
       alcohol: "15.0% Alcohol",
-      price: 80,
+      price: 85,
       image: "/assets/images/beer/products/SakaraBottle500ml.png",
     },
     {
@@ -240,7 +240,7 @@ export const productsData = {
       name: "Sakara El-King 10 Can 500ml",
       brand: "sakara",
       alcohol: "10.0% Alcohol",
-      price: 70,
+      price: 75,
       image: "/assets/images/beer/products/ElKing.png",
     },
     {
@@ -248,7 +248,7 @@ export const productsData = {
       name: "Sakara El-King 10 Bottle 500ml",
       brand: "sakara",
       alcohol: "10.0% Alcohol",
-      price: 70,
+      price: 75,
       image: "/assets/images/beer/products/El-King10Bottle500ml.png",
     },
     {
@@ -336,7 +336,7 @@ export const productsData = {
       name: "Chateau de Grandville Red Wine 750ml",
       brand: "red-wine",
       alcohol: "12.5% Alcohol",
-      price: 525,
+      price: 550,
       image: "/assets/images/wine/products/redwine_1.png",
     },
     {
@@ -344,7 +344,7 @@ export const productsData = {
       name: "Cape Bay Red Wine 750ml",
       brand: "red-wine",
       alcohol: "12.5% Alcohol",
-      price: 430,
+      price: 450,
       image: "/assets/images/wine/products/redwine_2.png",
     },
     {
@@ -352,7 +352,7 @@ export const productsData = {
       name: "Grand Marquis Red Wine 750ml",
       brand: "red-wine",
       alcohol: "12.0% Alcohol",
-      price: 320,
+      price: 340,
       image: "/assets/images/wine/products/redwine_3.png",
     },
     {
@@ -360,7 +360,7 @@ export const productsData = {
       name: "Castello Di Trevi Red Wine 750ml",
       brand: "red-wine",
       alcohol: "13.0% Alcohol",
-      price: 380,
+      price: 400,
       image: "/assets/images/wine/products/redwine_4.png",
     },
     {
@@ -416,7 +416,7 @@ export const productsData = {
       name: "Omar Khayyam Red Wine 750ml",
       brand: "red-wine",
       alcohol: "12.5% Alcohol",
-      price: 240,
+      price: 260,
       image: "/assets/images/wine/products/redwine_11.png",
     },
     {
@@ -482,7 +482,7 @@ export const productsData = {
       name: "Omar Khayyam Rose Wine 750ml",
       brand: "rose-wine",
       alcohol: "12.5% Alcohol",
-      price: 240,
+      price: 270,
       image: "/assets/images/wine/products/rosewine_5.png",
     },
     {
@@ -508,7 +508,7 @@ export const productsData = {
       name: "Chateau de Grandville White Wine 750ml",
       brand: "white-wine",
       alcohol: "12.0% Alcohol",
-      price: 525,
+      price: 550,
       image: "/assets/images/wine/products/whitewine_1.png",
     },
     {
@@ -524,7 +524,7 @@ export const productsData = {
       name: "Grand Marquis White Wine 750ml",
       brand: "white-wine",
       alcohol: "12.5% Alcohol",
-      price: 320,
+      price: 340,
       image: "/assets/images/wine/products/whitewine_3.png",
     },
     {
@@ -532,7 +532,7 @@ export const productsData = {
       name: "Castello Di Trevi White Wine 750ml",
       brand: "white-wine",
       alcohol: "13.5% Alcohol",
-      price: 380,
+      price: 400,
       image: "/assets/images/wine/products/whitewine_4.png",
     },
     {
@@ -638,7 +638,7 @@ export const productsData = {
       name: "Abarka Wine 750ml",
       brand: "sweet-wine",
       alcohol: "16% Alcohol",
-      price: 230,
+      price: 240,
       image: "/assets/images/wine/products/sweetwine_3.png",
     },
   ],
@@ -704,7 +704,7 @@ export const productsData = {
       name: "Valmont Rose Sparkling Wine 750ml",
       brand: "sparkling-wine",
       alcohol: "12.5% Alcohol",
-      price: 375,
+      price: 400,
       image: "/assets/images/wine/products/sparkingwine_8.png",
     },
     {
@@ -722,7 +722,7 @@ export const productsData = {
       name: "Devlin Whiskey 750ml",
       brand: "whiskey",
       alcohol: "40% Alcohol",
-      price: 750,
+      price: 850,
       image: "/assets/images/spirits/products/whisky_1.png",
     },
     {
@@ -738,7 +738,7 @@ export const productsData = {
       name: "Auld Stag 750ml",
       brand: "whiskey",
       alcohol: "40% Alcohol",
-      price: 240,
+      price: 250,
       image: "/assets/images/spirits/products/whisky_3.png",
     },
     {
@@ -746,7 +746,7 @@ export const productsData = {
       name: "BOLANACHI Hydelands 750ml",
       brand: "whiskey",
       alcohol: "35% Alcohol",
-      price: 140,
+      price: 155,
       image: "/assets/images/spirits/products/whisky_4.png",
     },
     {
@@ -764,7 +764,7 @@ export const productsData = {
       name: "Cubana Rum 750ml",
       brand: "rum",
       alcohol: "40% Alcohol",
-      price: 350,
+      price: 380,
       image: "/assets/images/spirits/products/rum-1.png",
     },
     {
@@ -772,7 +772,7 @@ export const productsData = {
       name: "BOLANACHI Rum Aloha 750ml",
       brand: "rum",
       alcohol: "35% Alcohol",
-      price: 140,
+      price: 155,
       image: "/assets/images/spirits/products/rum-2.png",
     },
   ],
@@ -782,7 +782,7 @@ export const productsData = {
       name: "ID Vodka Blue40 750ml",
       brand: "vodka",
       alcohol: "40% Alcohol",
-      price: 400,
+      price: 440,
       image: "/assets/images/spirits/products/vodka-1.png",
     },
     {
@@ -790,7 +790,7 @@ export const productsData = {
       name: "Blue40 Raspberry",
       brand: "vodka",
       alcohol: "38% Alcohol",
-      price: 400,
+      price: 440,
       image: "/assets/images/spirits/products/vodka-2.png",
     },
     {
@@ -798,7 +798,7 @@ export const productsData = {
       name: "Blue40 Citrus",
       brand: "vodka",
       alcohol: "38% Alcohol",
-      price: 400,
+      price: 440,
       image: "/assets/images/spirits/products/vodka-3.png",
     },
     {
@@ -806,7 +806,7 @@ export const productsData = {
       name: "ID Vodka 750ml",
       brand: "vodka",
       alcohol: "38% Alcohol",
-      price: 220,
+      price: 250,
       image: "/assets/images/spirits/products/vodka-4.png",
     },
     {
@@ -814,7 +814,7 @@ export const productsData = {
       name: "BOLANACHI Vodka Volga 750ml",
       brand: "vodka",
       alcohol: "35% Alcohol",
-      price: 140,
+      price: 155,
       image: "/assets/images/spirits/products/vodka-5.png",
     },
     {
@@ -822,7 +822,7 @@ export const productsData = {
       name: "ID Vodka 350ml",
       brand: "vodka",
       alcohol: "38% Alcohol",
-      price: 140,
+      price: 130,
       image: "/assets/images/spirits/products/vodka-6.png",
     },
   ],
@@ -840,7 +840,7 @@ export const productsData = {
       name: "ID Gin 750ml",
       brand: "gin",
       alcohol: "38% Alcohol",
-      price: 220,
+      price: 250,
       image: "/assets/images/spirits/products/gin-2.png",
     },
     {
@@ -876,7 +876,7 @@ export const productsData = {
       name: "Miraki 750ml",
       brand: "arak",
       alcohol: "42% Alcohol",
-      price: 240,
+      price: 250,
       image: "/assets/images/spirits/products/arak-1.png",
     },
   ],
@@ -886,7 +886,7 @@ export const productsData = {
       name: "Malvado 750ml",
       brand: "tequila",
       alcohol: "38% Alcohol",
-      price: 240,
+      price: 250,
       image: "/assets/images/spirits/products/tequila-1.png",
     },
   ],
@@ -896,7 +896,7 @@ export const productsData = {
       name: "ID XXXX Watermelon 275ml",
       brand: "id",
       alcohol: "20% Alcohol",
-      price: 70,
+      price: 80,
       image: "/assets/images/rtd/products/id-1.png",
     },
     {
@@ -912,7 +912,7 @@ export const productsData = {
       name: "ID XXXX Mango 275ml",
       brand: "id",
       alcohol: "20% Alcohol",
-      price: 70,
+      price: 80,
       image: "/assets/images/rtd/products/id-3.png",
     },
     {
@@ -920,7 +920,7 @@ export const productsData = {
       name: "ID XXX Cherry 275ml",
       brand: "id",
       alcohol: "15% Alcohol",
-      price: 65,
+      price: 70,
       image: "/assets/images/rtd/products/id-4.png",
     },
     {
@@ -936,7 +936,7 @@ export const productsData = {
       name: "ID Double Edge Watermelon 275ml",
       brand: "id",
       alcohol: "10% Alcohol",
-      price: 60,
+      price: 65,
       image: "/assets/images/rtd/products/id-6.png",
     },
     {
@@ -944,7 +944,7 @@ export const productsData = {
       name: "ID Double Edge Energy 275ml",
       brand: "id",
       alcohol: "10% Alcohol",
-      price: 60,
+      price: 65,
       image: "/assets/images/rtd/products/id-7.png",
     },
     {
@@ -962,7 +962,7 @@ export const productsData = {
       name: "Blue40 Freeze Sky Colada",
       brand: "blue40-freeze",
       alcohol: "6.5% Alcohol",
-      price: 60,
+      price: 65,
       image: "/assets/images/rtd/products/blue40-freeze-1.png",
     },
     {
@@ -970,7 +970,7 @@ export const productsData = {
       name: "Blue40 Freeze Pink Berry",
       brand: "blue40-freeze",
       alcohol: "8% Alcohol",
-      price: 60,
+      price: 65,
       image: "/assets/images/rtd/products/blue40-freeze-2.png",
     },
     {
@@ -978,7 +978,7 @@ export const productsData = {
       name: "Blue40 Freeze Original",
       brand: "blue40-freeze",
       alcohol: "8% Alcohol",
-      price: 60,
+      price: 65,
       image: "/assets/images/rtd/products/blue40-freeze-3.png",
     },
   ],
@@ -1004,7 +1004,7 @@ export const productsData = {
       name: "BUTLERS Apple Cin 10%",
       brand: "butlers",
       alcohol: "10% Alcohol",
-      price: 60,
+      price: 65,
       image: "/assets/images/rtd/products/butlers-3.png",
     },
     {
@@ -1012,7 +1012,7 @@ export const productsData = {
       name: "Butler's Gin Lemon Mint 275ml",
       brand: "butlers",
       alcohol: "10% Alcohol",
-      price: 60,
+      price: 65,
       image: "/assets/images/rtd/products/butlers-4.png",
     },
   ],

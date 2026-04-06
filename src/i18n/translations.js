@@ -57,7 +57,7 @@ export const translations = {
     locationMapLink: "Map link",
     customRequestsTitle: "Dear valued customer",
     customRequestsMessage:
-      "Kindly note that the shops will be completely closed from the first day of Ramadan, February 19th, until February 22nd.\n\nIn order to satisfy our customers, We will be resumed the operations starting from February 23rd via delivery services from 3:00PM to 9:00PM. Till the end of Ramadan.\n\nBest Wishes,\nHedra Al Ahyaa & Al Kawther",
+      "If you'd like to add something that wasn't in the catalog, just let us know!",
     installAppButton: "Install app",
     installAppMessage:
       "For a smoother experience, install HedraNewShop as an app on your device.",
@@ -131,7 +131,7 @@ export const translations = {
     locationMapLink: "Ссылка на карту",
     customRequestsTitle: "Уважаемый клиент",
     customRequestsMessage:
-      "Обратите внимание, что магазины будут полностью закрыты с первого дня Рамадана, 19 февраля, до 22 февраля.\n\nДля удовлетворения наших клиентов мы возобновим работу начиная с 23 февраля через службу доставки с 15:00 до 21:00. До конца Рамадана.\n\nС наилучшими пожеланиями,\nHedra Al Ahyaa & Al Kawther",
+      "Если вы хотите добавить что-то, чего не нашли в каталоге, просто напишите нам!",
     installAppButton: "Установить приложение",
     installAppMessage:
       "Для более комфортной работы установите приложение HedraNewShop.",
