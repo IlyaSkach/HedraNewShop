@@ -131,7 +131,7 @@ export const translations = {
     locationMapLink: "Ссылка на карту",
     customRequestsTitle: "Уважаемый клиент",
     customRequestsMessage:
-      "Если вы хотите добавить что-то, чего не нашли в каталоге, просто напишите нам!",
+      "Если вы хотите добавить что-то, чего не нашли в нашем каталоге, просто напишите нам!",
     installAppButton: "Установить приложение",
     installAppMessage:
       "Для более комфортной работы установите приложение HedraNewShop.",
