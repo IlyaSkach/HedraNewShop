@@ -511,7 +511,7 @@ export const productsData = {
       name: "Omar Khayyam Rose Wine 750ml",
       brand: "rose-wine",
       alcohol: "12.5% Alcohol",
-      price: 270,
+      price: 260,
       image: "/assets/images/wine/products/rosewine_5.png",
     },
     {
